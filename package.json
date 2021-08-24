@@ -1,0 +1,23 @@
+{
+  "name": "js2",
+  "version": "1.0.0",
+  "description": "criacao em aula 34",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sr-adilson/JS.git"
+  },
+  "author": "Adilson e Matheus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sr-adilson/JS/issues"
+  },
+  "homepage": "https://github.com/sr-adilson/JS#readme",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
