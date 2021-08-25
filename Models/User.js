@@ -1,7 +1,7 @@
 import {TypeUser} from "./TypeUser.js"
-let tu = new TypeUser();
+// endpoint = "User";
 export class User{
+    typeUser = new TypeUser();
     email;
     password;
-    typeUser;
 }

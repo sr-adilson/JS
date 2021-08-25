@@ -1,10 +1,9 @@
 import { User } from "./User.js";
-let u = new User();
+// endpoint = "Person";
 export class Person{
-    id;
-    fisrtName;
+    user = new User();
+    firstName;
     lastName;
     birthDate;
     document;
-    user = u;
 }

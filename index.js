@@ -1,25 +1,35 @@
 import { Person } from "./Models/Person.js"
 import { TypeUser } from "./Models/TypeUser.js";
-import { TypeUser } from "./Models/TypeUser.js";
 import { User } from "./Models/User.js";
-import { Crud } from "./Repository/XRepository.js"
+import {PersonRepository} from "./Repository/PersonRepository.js"
 
-let M = new User();
-let K = new TypeUser();
-// M.id = 585;
-// M.fisrtName = "Adilson";
-// M.lastName = "Ramos";
-// M.birthDate = "23/08/1989";
+let person = new Person();
+let user = new User();
+let typeUser = new TypeUser();
 
-// M.user.id = 549;
-// M.user.document = "Sei la";
-M.email = "Sr@seila";
-M.password = "FuckingPassword";
-M.typeUser = typeUser.id;
-// M.Name = "Eita porra";
-// M.Description = "oque é isso eu nao sei";
-let xis = new Crud();
-xis.create(M);
-console.log(M)
+person.firstName = "Eita";
+person.lastName = "Ramos";
+person.birthDate = "1999-04-16T00:00:00";
+person.document = "Seila";
+person.user = user;
 
+user.password = "FuckingPassword";
+user.email = "Sr@seila";
+user.typeUser = typeUser;
+
+typeUser.Name = "T name";
+typeUser.Description = "Descricao T";
+
+let xis = new PersonRepository();
+// xis.create(person);
+// console.log(person)
+// xis.read().then(list => {
+//     list.forEach(e => {
+//         console.log(e)
+//     });
+// });
+// xis.read_by_Id(2).then(e => console.log(e));
+person.id = 2;
+// xis.update(person)
+xis.delete(2)
 
